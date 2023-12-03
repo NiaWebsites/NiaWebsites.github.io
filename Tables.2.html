@@ -1,0 +1,52 @@
+<html> 
+<head>
+	<title> Tables Code #2 </title>
+
+   <style>
+   	body {
+   		background-color: lightpink;
+   	}
+   	#ans{background-color: orange; width:60%;}
+   	ul{padding:20px;}
+   	li{background-color: lightyellow;
+   		width:40%;
+   		color:red;}
+   </style>
+</head>
+<body> 
+<h1> Nia's Math Tables </h1>
+<h2> Enter a number! : </h2>
+<input type = "text" id="num">
+<button onclick="tableFn()"> Generate tables </button>
+<div id="ans"> </div>
+
+<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+<script>
+function tableFn2() {
+n =  $("#num").val();
+
+for( i=1; i<=10; i++){
+x = n * i;
+
+$("#ans").append("<li>"+x+"<li>");
+}
+
+
+
+}
+
+function tableFn(){
+n = $("#num").val();
+$("#ans").append("<ul>");
+
+for (i=1; i<=10; i++){
+x = n * i;
+
+$("#ans").append("<li>"+x+"</li>");
+}
+
+$("#ans").append("</ul>");
+}
+</script>
+</body>
+</html> 
