@@ -1,0 +1,45 @@
+<html>
+<head> 
+	<title> Moving Picture </title>
+	<style>
+div{
+	width: 40%;
+	border-style: double;
+	border-width:10px;
+	border-color:#f72f78;
+}
+img{
+	padding:50px;
+}
+
+	</style>
+</head>
+<body> 
+
+
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+	<button  onclick="fn1()"> Switch On </button>
+	<button  onclick="fn2()"> Switch Off </button>
+
+<div id = "bulb">
+	<img src = "bulb_on.png" id="on" width=300px alt = "Image of a switched on lightbulb">
+	<img src = "bulb_off.png" id="off" width=300px alt = "Image of a switched off lightbulb"> 
+</div>
+	<script type = "text/javascript">
+			$("#off").hide(); 
+
+		function fn1(){
+			$("#off").hide();
+			$("#on").show();
+			$("#bulb").css( {'background-color': 'lightyellow'} );
+			
+}
+ function fn2(){
+ 	$("#on").hide();
+ 	$("#off").show();
+ 	$("#bulb").css( {'background-color': 'darkgray'} );
+}
+</script>
+</body>
+</html>

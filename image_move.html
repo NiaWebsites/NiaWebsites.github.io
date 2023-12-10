@@ -1,0 +1,19 @@
+<html>
+<head>
+	<title>Moving Puppy</title>
+	</head>
+	<body>
+<img src = "Puppy.jpeg" id = "puppy" alt = "Picture of a Puppy">
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script>
+	$("html").click(fn1);
+	function fn1(event){
+		$("#puppy").offset({
+			left:event.pageX,
+			top:event.pageY
+});
+}
+
+	</script>
+	</body>
+	</html>
